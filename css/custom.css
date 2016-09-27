@@ -7,6 +7,20 @@ html,body {height:100%;}
     padding-left:0;
 }
 
+/* Text */
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+.hero-image h4 {
+  font-weight: 100;
+}
+
 /* Nav */
 #logo {
   margin-top: 7px;
@@ -66,7 +80,11 @@ html,body {height:100%;}
 /* Hero */
 .hero-image {
   position: relative;
-  background: #000 url("../img/main2-copy.jpg") center center;
+  background: #00c6ff; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #00c6ff 0%, #0072ff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #00c6ff 0%,#0072ff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #00c6ff 0%,#0072ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c6ff', endColorstr='#0072ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -85,9 +103,6 @@ html,body {height:100%;}
 
 .tag-outline {
   margin-bottom: 25px;
-  border-style: solid;
-  border-width: 10pt;
-  border-color: #ffffff;
   text-align: center;
 }
 
@@ -108,7 +123,7 @@ html,body {height:100%;}
 }
 
 .text-light {
-  color: #9c9a9a;
+  color: #3A3A3A;
 }
 
 /* News + Exhibit */
@@ -121,13 +136,13 @@ html,body {height:100%;}
 }
 
 .exhibit-div {
-  background-image: url("../img/news-exhibit-index.jpg");
+  background-image: url("../img/sarah/IMG_0652.jpg");
   background-size: cover;
   height: 500px;
 }
 
 .news-div {
-  background-image: url("../img/news-main-index.jpg");
+  background-image: url("../img/sarah/therapy2.jpg");
   background-size: cover;
   height: 500px;
 }
@@ -174,7 +189,7 @@ html,body {height:100%;}
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #525252;
+  background-color: #00c6ff;
 }
 
 .footer-list li {
@@ -183,7 +198,7 @@ html,body {height:100%;}
 
 .footer-list li a {
   font-size: 10px;
-  color: #61da32;
+  color: #FFFFFF;
   display: inline-block;
   padding: 10px 23px;
   text-decoration: none;
@@ -243,7 +258,17 @@ html,body {height:100%;}
 
 .news-image {
   position: relative;
-  background: #000 url("../img/1news.jpg") center center;
+  background: #000 url("../img/sarah/therapy4.jpg") center center;
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.news-image2 {
+  position: relative;
+  background: #000 url("../img/sarah/therapy3.jpg") center center;
   width: 100%;
   height: 60%;
   background-size: cover;
